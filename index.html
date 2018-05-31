@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+
+<body>
+    <nav class="navbar" id="navbarbg">
+        <div class="with-container-fluid">
+                <!-- //Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="first" class="navbar-brand" href="index.html">Aliens</a>
+            </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right text-center" id="navbar">
+                    <li><div class="form-group">
+                        <input type="date" class="form-control" id="datetime" placeholder="datetime" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"> 
+                    </div></li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+                 
+                <form action="/output/" name="InputCacheCheck" method="post">
+                  <div class="input-prepend input-append">
+                      <div class="btn-group">
+              
+                          <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown">
+                          Record
+                          <span class="caret"></span>
+                          </button>
+                <!-- <a id="citytag" href="#" class="form-control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="citytag1">City</span><span class="caret"></span></a> -->
+                    <!-- <ul id="citylist" class="dropdown-menu"></ul>  -->
+                    <ul class="dropdown-menu" id="citylist">
+                        <!-- <li><a href="#">A</a></li>
+                        <li><a href="#">CNAME</a></li>
+                        <li><a href="#">MX</a></li>
+                        <li><a href="#">PTR</a></li> -->
+                    </ul>
+                  
+                    </div>
+                  </div>
+                </form>  
+             <ul>       
+                <li class="dropdown">
+                    <a id="statetag" href="#" class="form-control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">State <span class="caret"></span></a>
+                        <ul id="statelist" class="dropdown-menu"></ul>     
+                </li>
+                <li class="dropdown">
+                    <a id="shapetag" href="#" class="form-control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shape <span class="caret"></span></a>
+                        <ul id="shapelist" class="dropdown-menu"></ul>     
+                </li>
+                <li class="form-group">
+                    <a id="search" class="btn btn-default">Search</a>
+                </li>
+              </ul>
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="date" class="form-control" id="datetime" placeholder="datetime" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"> 
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="city" placeholder="City"> 
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="state" placeholder="State"> 
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="country" placeholder="Country"> 
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="shape" placeholder="Shape"> 
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <a id="search" class="btn btn-default">Search</a>
+        </div>
+      </div>
+    </div>
+    </div> -->
+
+
+    <div class="container-fluid">
+        <div class="row" id="table">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th>Datetime</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>DurationMinutes</th>
+                    <th>Comment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>  
+ 
+  
+</body>
+
+</html>

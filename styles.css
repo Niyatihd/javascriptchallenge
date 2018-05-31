@@ -1,0 +1,47 @@
+.form-group, .dropdown {
+  display: inline-block;
+  width: 160px;
+  /* margin-top: 50px; */
+  /* padding-top: 40px;
+  padding-bottom: 20px; */
+}
+
+#search {
+  height: 34px;
+  font-weight: bold;
+  background-color: aquamarine;
+}
+
+#table {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#navbarbg {
+  background-color: burlywood;
+  padding-top: 60px;
+  height: 150px;
+}
+
+#first {
+  font-size: 60px;
+  color: darkolivegreen;
+  /* padding-top: 60px;  */
+  font-weight: bolder
+}
+
+/* #citytag {
+  background-color:lightcyan;
+  color:darkcyan;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+  height: 10px;
+} */
+
+.dropdown-menu {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 150px;
+}
